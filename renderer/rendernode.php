@@ -23,7 +23,7 @@ while($currentframe<$endframe) { //For each frame
 }
 
 //Now that all of the frames are rendered, let's make a video!
-shell_exec("ffmpeg -framerate ".$fps." -i ".$jobid."_frame_%d.png -c:v libx264 -r 30 -pix_fmt yuv420p ".$jobid."_videofragment_".$startframe.".mp4");
+shell_exec("ffmpeg -framerate ".$fps." -startnumber ".$startframe." -i ".$jobid."_frame_%d.png -c:v libx264 -r 30 -pix_fmt yuv420p ".$jobid."_videofragment_".$startframe.".mp4");
 shell_exec("rm ".$jobid."_frame_*");
 $post = array( //Job description
 	"framestart"=>$startframe,
