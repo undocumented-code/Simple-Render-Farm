@@ -1,0 +1,1 @@
+{"background.png":{"z":0},"happyface.png":{"z":1,"motion":[{"st":0,"sx":0,"sy":0,"ex":300,"ey":500,"et":5},{"st":5,"sx":300,"sy":500,"ex":20,"ey":30,"et":10}]},"cow.png":{"z":2,"motion":[{"st":0,"sx":600,"sy":0,"ex":240,"ey":300,"et":6},{"st":6,"sx":240,"sy":300,"ex":20,"ey":30,"et":9}]}}
