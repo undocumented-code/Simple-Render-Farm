@@ -4,7 +4,7 @@
 //Accepts a job and renders the given frames based on what's required.
 $jobid = $argv[1];
 $startframe = $argv[2];
-$endframe = $argv[3];
+$endframe = $argv[3] + $argv[2];
 $fps = 30;
 $currentframe = $startframe;
 $job = json_decode(file_get_contents($jobid),true);
